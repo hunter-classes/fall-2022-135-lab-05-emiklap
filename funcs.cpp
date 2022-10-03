@@ -29,7 +29,6 @@ bool isPrime(int n) {
             }
         }
         return true;
-
     } else {
         return false;
     }
@@ -49,5 +48,21 @@ int nextPrime(int n) {
         }
     }
     return n;
+}
+
+/**
+ * Counts the number of prime numbers between (and including) an inputted range
+ * @param a the lower range
+ * @param b the upper range
+ * @return the number of prime numbers between a and b
+ */
+int countPrimes(int a, int b) {
+    int counter = 0;
+    for (int i = a; i <= b; i++) {
+        if (isPrime(i)) {
+            counter++;
+        }
+    }
+    return counter;
 }
 

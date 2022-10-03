@@ -14,5 +14,8 @@ int main()
 
   std::cout << "\n Task C: \n" << "nextPrime(14) = " << nextPrime(14) << std::endl;
   std::cout << "nextPrime(17) = " << nextPrime(17) << std::endl;
+
+  std::cout << "\n Task D: \n" << "countPrimes(5, 20) = " << countPrimes(5, 20) << std::endl;
+  std::cout << "countPrimes(175, 282) = " << countPrimes(175, 282) << std::endl;
   return 0;
 }

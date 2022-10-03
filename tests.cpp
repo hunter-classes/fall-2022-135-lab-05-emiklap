@@ -22,3 +22,8 @@ TEST_CASE("Task C: nextPrime()") {
     CHECK(nextPrime(809) == 811);
     CHECK(nextPrime(809) != 810);
 }
+
+TEST_CASE("Task D: countPrimes()") {
+    CHECK(countPrimes(5, 20) == 6);
+    CHECK(countPrimes(175, 282) == 20);
+}
