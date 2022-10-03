@@ -17,7 +17,9 @@ bool isDivisibleBy(int n, int d) {
 }
 
 /**
- *
+ * Checks if a number us is is prime
+ * @param n the number being checked
+ * @return will return true if prime, will return false if not
  */
 bool isPrime(int n) {
     if (n > 1) {
@@ -31,5 +33,21 @@ bool isPrime(int n) {
     } else {
         return false;
     }
+}
+
+/**
+ * Finds the next prime number after the given integer
+ * @param n the starting integer
+ * @return returns the next prime number after n
+ */
+int nextPrime(int n) {
+    bool checker = false;
+    while (!checker) {
+        n++;
+        if (isPrime(n)) {
+            checker = true;
+        }
+    }
+    return n;
 }
 

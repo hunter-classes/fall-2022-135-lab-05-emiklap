@@ -15,3 +15,10 @@ TEST_CASE("Task B: isPrime()") {
     CHECK(isPrime(164) == false);
     CHECK(isPrime(17) == true);
 }
+
+TEST_CASE("Task C: nextPrime()") {
+    CHECK(nextPrime(14) == 17);
+    CHECK(nextPrime(17) == 19);
+    CHECK(nextPrime(809) == 811);
+    CHECK(nextPrime(809) != 810);
+}
