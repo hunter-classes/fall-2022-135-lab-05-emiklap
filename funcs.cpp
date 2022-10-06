@@ -73,11 +73,29 @@ int countPrimes(int a, int b) {
  */
 bool isTwinPrime(int n) {
     bool checker = false;
-    if (isPrime(n-2)) {
-        checker = true;
-    } else if (isPrime(n+2)) {
-        checker = true;
+    if (isPrime(n)) {
+        if (isPrime(n-2)) {
+            checker = true;
+        } else if (isPrime(n+2)) {
+            checker = true;
+        }
     }
     return checker;
+}
+
+/**
+ * Finds the next twin prime after a given number
+ * @param n the starting number
+ * @return the next twin prime after n
+ */
+int nextTwinPrime(int n) {
+    bool continueLoop = true;
+    while (continueLoop) {
+        n++;
+        if (isTwinPrime(n)) {
+            continueLoop = false;
+        }
+    }
+    return n;
 }
 

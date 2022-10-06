@@ -20,5 +20,8 @@ int main()
 
   std::cout << "\n Task E: \n" << "isTwinPrime(17) = " << isTwinPrime(17) << std::endl;
   std::cout << "isTwinPrime(2) = " << isTwinPrime(2) << std::endl;
+
+  std::cout << "\n Task F: \n" << "nextTwinPrime(3) = " << nextTwinPrime(3) << std::endl;
+  std::cout << "nextTwinPrime(19) = " << nextTwinPrime(19) << std::endl;
   return 0;
 }

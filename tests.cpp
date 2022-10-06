@@ -30,5 +30,13 @@ TEST_CASE("Task D: countPrimes()") {
 
 TEST_CASE("Task E: isTwinPrime():") {
     CHECK(isTwinPrime(17) == true);
+    CHECK(isTwinPrime(4) == false);
     CHECK(isTwinPrime(2) == false);
+}
+
+TEST_CASE("Task F: nextTwinPrime():") {
+    CHECK(nextTwinPrime(3) == 5);
+    CHECK(nextTwinPrime(5) == 7);
+    CHECK(nextTwinPrime(19) != 23);
+    CHECK(nextTwinPrime(19) == 29);
 }
