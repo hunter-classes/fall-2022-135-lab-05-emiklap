@@ -17,5 +17,8 @@ int main()
 
   std::cout << "\n Task D: \n" << "countPrimes(5, 20) = " << countPrimes(5, 20) << std::endl;
   std::cout << "countPrimes(175, 282) = " << countPrimes(175, 282) << std::endl;
+
+  std::cout << "\n Task E: \n" << "isTwinPrime(17) = " << isTwinPrime(17) << std::endl;
+  std::cout << "isTwinPrime(2) = " << isTwinPrime(2) << std::endl;
   return 0;
 }

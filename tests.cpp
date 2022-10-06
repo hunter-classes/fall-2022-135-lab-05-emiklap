@@ -27,3 +27,8 @@ TEST_CASE("Task D: countPrimes()") {
     CHECK(countPrimes(5, 20) == 6);
     CHECK(countPrimes(175, 282) == 20);
 }
+
+TEST_CASE("Task E: isTwinPrime():") {
+    CHECK(isTwinPrime(17) == true);
+    CHECK(isTwinPrime(2) == false);
+}

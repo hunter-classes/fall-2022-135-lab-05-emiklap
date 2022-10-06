@@ -66,3 +66,18 @@ int countPrimes(int a, int b) {
     return counter;
 }
 
+/**
+ * Will check if a number is a twin prime
+ * @param n the number being checked
+ * @return will return true if n is a twin prime, will return false otherwise
+ */
+bool isTwinPrime(int n) {
+    bool checker = false;
+    if (isPrime(n-2)) {
+        checker = true;
+    } else if (isPrime(n+2)) {
+        checker = true;
+    }
+    return checker;
+}
+
