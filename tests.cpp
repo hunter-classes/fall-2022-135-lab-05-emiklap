@@ -40,3 +40,9 @@ TEST_CASE("Task F: nextTwinPrime():") {
     CHECK(nextTwinPrime(19) != 23);
     CHECK(nextTwinPrime(19) == 29);
 }
+
+TEST_CASE("Task G: largestTwinPrime():") {
+    CHECK(largestTwinPrime(5, 18) == 17);
+    CHECK(largestTwinPrime(1, 31) == 31);
+    CHECK(largestTwinPrime(14, 16) == -1);
+}
